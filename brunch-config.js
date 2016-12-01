@@ -22,6 +22,10 @@ exports.config = {
     stylesheets: {
       joinTo: "css/app.css",
       order: {
+        before: [
+          "web/static/css/phoenix.css",
+          "web/static/css/font-awesome.min.css"
+        ],
         after: ["web/static/css/app.css"] // concat app.css last
       }
     },
